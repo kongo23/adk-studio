@@ -137,21 +137,21 @@ hr {
 	}
 @media only screen and (min-width: 775px) {
  .light{
-	margin:30px 0 0 5% !important;
+	margin:45px 0 0 5% !important;
 	border:1px solid #383838;
 	border-right: none;
 }
 .standard{
-	margin:15px 0 0 0% !important;
+	margin:30px 0 0 0% !important;
 	border:1px solid #383838;
 }
 .premium{
-	margin:0px 0px 0 0 !important;
+	margin:15px 0px 0 0 !important;
 	border:1px solid #383838;
 	border-left: none;
 } 
 .extra{
-	margin:90px 0px 0 0 !important;
+	margin:0px 0px 0 0 !important;
 	border:1px solid #383838;
 	border-left: none;
 } 
@@ -167,10 +167,7 @@ hr {
 	.package .span3 li{
 		margin:15px 5px;
 	}
-		.package .span3:hover .title-description{
-		color:#FFFFFF;
-		}
-		.package .span3:hover{
+		.package .span3:hover, .package .span3:hover .title-description{
 		color:#FFFFFF;
 		}
 	.package .title-description{
@@ -193,6 +190,7 @@ hr {
 		 border-top:1px solid #545454;
 		margin-left:10px;
 		margin-right:10px;
+		transition:0.3s;
 	}
 .price{
 font-family: 'Poiret One', cursive;
@@ -218,7 +216,7 @@ padding-bottom: 20px;
     color:#FFFFFF;
   }
 
-	.icon {
+.icon {
   width: 22px;
   height: 22px;
   display: inline-block;
@@ -228,49 +226,13 @@ padding-bottom: 20px;
   mask-size: cover;
   background-color: #23262C;
 }
-/*.icon-animation2 { 
-  -webkit-animation: 'second' 36s infinite linear;
-  animation: 'second' 36s infinite linear;
-  transform: translateZ(0);
-}*/
-.light:hover .icon{
+.light:hover .icon, .standard:hover .icon, .premium:hover .icon, .extra:hover .icon{
 	background-color: #DE5E60;
 }
 
-.standard:hover .icon{
-	background-color: #DE5E60;
+.premium:hover hr,.extra:hover hr,.standard:hover hr,.light:hover hr  {
+	border-top: 1px solid #DE5E60;
 }
-
-.premium:hover .icon{
-	background-color: #DE5E60;
-}
-
-.extra:hover .icon{
-	background-color: #DE5E60;
-}
-
-/*
-@-webkit-keyframes 'second' {
-  0% { background-color: #DE5E60; }
-  16% {background-color: #33235B;   }
-  32% {background-color: #D62229;   }
-  48% { background-color: #E97639; }
-  60% { background-color: #792042; }
-  72% { background-color: #33235B; }
-  84% { background-color: indigo;}
-  96% { background-color: #de6182;}
-}
-
-@keyframes 'second' {
- 0% { background-color: #DE5E60; }
-  16% {background-color: #33235B;   }
-  32% {background-color: #D62229;   }
-  48% { background-color: #E97639; }
-  60% { background-color: #792042; }
-  72% { background-color: #33235B; }
-  84% { background-color: indigo;}
-  96% { background-color: #de6182;}
-}*/
 
 	/*======================end custom css==================*/
 @media only screen and (min-width: 40.063em) {
