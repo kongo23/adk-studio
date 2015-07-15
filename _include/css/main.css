@@ -164,6 +164,9 @@ hr {
 	.package .span3{
 		background-color: #3C3F45;
 	}
+	.package ul{
+		margin-left:5px;
+	}
 	.package .span3 li{
 		margin:15px 5px;
 	}
@@ -215,6 +218,22 @@ padding-bottom: 20px;
   .premium:hover .price-animation {
     color:#FFFFFF;
   }
+  .premium hr{
+	border: 0;
+	height: 1px;
+	background: #E8B7B1;
+    background: -webkit-linear-gradient(left, #33235B, #D62229, #E97639, #792042, #33235B);
+    background: linear-gradient(left, #33235B, #D62229, #E97639, #792042, #33235B) !important;
+    color: transparent;
+    -webkit-animation: animate-logo;
+    -webkit-animation-delay: 0;
+    -webkit-animation-duration: 7s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: forwards;
+    transition: font-size 500ms ease-in-out;
+    background-size: 3200px 200px;
+}
 
 .icon {
   width: 22px;
@@ -226,12 +245,31 @@ padding-bottom: 20px;
   mask-size: cover;
   background-color: #23262C;
 }
-.light:hover .icon, .standard:hover .icon, .premium:hover .icon, .extra:hover .icon{
+.light:hover .icon{
+	background-color: #E2FFF7;
+}
+.standard:hover .icon{
+	background-color: #D4920E;
+}
+.premium:hover .icon{
+	background-color: #E8A2A2;
+}
+.extra:hover .icon{
 	background-color: #DE5E60;
 }
-
-.premium:hover hr,.extra:hover hr,.standard:hover hr,.light:hover hr  {
+.premium:hover hr{
+	border: 0;
+	height: 1px;
+	background: #E8A2A2;
+}
+.extra:hover hr{
 	border-top: 1px solid #DE5E60;
+}
+.standard:hover hr{
+	border-top: 1px solid #D4920E;
+}
+.light:hover hr{
+	border-top: 1px solid #E2FFF7;
 }
 
 	/*======================end custom css==================*/
