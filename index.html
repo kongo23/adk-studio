@@ -11,8 +11,8 @@
 
 <title>ADK | Web-Studio</title>   
 
-<meta name="description" content="Creative Outsourcing Web-Studio. Website&Design Development, SEO optimization" /> 
-
+<meta name="description" content="Creative Outsourcing Web-Studio. Website & Design Development, SEO optimization" /> 
+<meta property="og:image" content="_include/img/slider-images/image01.jpg" />
 <!-- Mobile Specifics -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="HandheldFriendly" content="true"/>
@@ -64,19 +64,7 @@
 <script src="_include/js/modernizr.js"></script>
 
 <!-- Analytics -->
-<script type="text/javascript">
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'Insert Your Code']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
 <!-- End Analytics -->
 
 </head>
@@ -87,25 +75,30 @@
 <!-- This section is for Splash Screen -->
 <div class="ole">
 <section id="jSplash">
-    <div id="circle"></div>
+    <div class="loader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+</div>
 </section>
 </div>
 <!-- End of Splash Screen -->
 
 <!-- Homepage Slider -->
-<div id="home-slider">  
+<div id="home-slider">	
     <div class="overlay"></div>
 
     <div class="slider-text">
-        <div class="logo-area"><h1 class="logo">ADK</h1> <h1 class="logo-studio">&nbsp;Studio</h1></div>
+    	<div class="logo-area"><h1 class="logo">ADK </h1> <h1 class="logo-studio">Studio</h1></div>
     </div>   
-    
-    <div class="control-nav">
+	
+	<div class="control-nav">
         <a id="prevslide" class="load-item"><i class="font-icon-arrow-simple-left"></i></a>
         <a id="nextslide" class="load-item"><i class="font-icon-arrow-simple-right"></i></a>
         <ul id="slide-list"></ul>
         
-        <a id="nextsection" href="#work"><i class="font-icon-arrow-simple-down"></i></a>
+        <a id="nextsection" href="#introduction"><i class="font-icon-arrow-simple-down"></i></a>
     </div>
 </div>
 <!-- End Homepage Slider -->
@@ -113,35 +106,50 @@
 <!-- Header -->
 <header>
     <div class="sticky-nav">
-        <a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
+    	<a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
         
         <div id="logo">
-            <a id="goUp" href="#home-slider" title="ADK studio">ADK</a>
+        	<a id="goUp" href="#home-slider" title="ADK studio">ADK</a>
         </div>
         
         <nav id="menu">
-            <ul id="menu-nav">
-                <li class="current"><a href="#home-slider">Home</a></li>
-                <li><a href="http://adkwebstudio.com/#work">Our Work</a></li>
-                <li><a href="http://adkwebstudio.com/#about">About Us</a></li>
-                <li><a href="http://adkwebstudio.com/#contact">Contact</a></li>
-                <li><a href="http://adkwebstudio.com/prices.html" class="external">Our Prices</a></li>
+        	<ul id="menu-nav">
+            	<li class="current"><a href="#home-slider">Home</a></li>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#work">Portfolio</a></li>
+                <li><a href="#about">Executive Team</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+				<li><a href="prices.html" class="external">Prices</a></li>
             </ul>
         </nav>
         
     </div>
 </header>
 <!-- End Header -->
-
+<div id="introduction" class="page-alternate">
+    <div class="container">
+    <div class="row">
+        <div class="span12">
+            <div class="title-page" id="creative-title">
+                 <h2 class="title">The Most Creative & Innovative </h2>
+                <h3 class="title-description">Building Beautiful Websites and Design's</h3>
+            </div>
+        </div>
+    </div> 
+    <div class="span6" id="img-webs"><img src="_include/img/mockup.png"  alt="ADK Websites" style="max-width:100% !important; height:auto;"></div>
+    <div class="span5" id="intro" >
+    We are a  team  of <span class="color-text">young professionals</span>  eager to make your dreams come true, using the mix of our innovative vision with the most up-to-date technology. <br> Our Team Leaders have been receiving many awards in web-design, programming and web-development since 2014.<br>  Let us assist you! Less investment - more results.</div>
+    </div>
+</div>
 <!-- Our Work Section -->
 <div id="work" class="page">
-    <div class="container">
-        <!-- Title Page -->
+	<div class="container">
+    	<!-- Title Page -->
         <div class="row">
             <div class="span12">
                 <div class="title-page">
-                    <h2 class="title">Our Work</h2>
-                    <h3 class="title-description">Check Out Our Projects on <a href="#">Somewhere</a>.</h3>
+                    <h2 class="title">Portfolio</h2>
+                    <h3 class="title-description">Here are some of our creations. Check it out!</h3>
                 </div>
             </div>
         </div>
@@ -149,11 +157,11 @@
         
         <!-- Portfolio Projects -->
         <div class="row">
-            <div class="span3">
-                <!-- Filter -->
+        	<div class="span3">
+            	<!-- Filter -->
                 <nav id="options" class="work-nav">
                     <ul id="filters" class="option-set" data-option-key="filter">
-                        <li class="type-work">Type of Work</li>
+                    	<li class="type-work">Portfolio</li>
                         <li><a href="#filter" data-option-value="*" class="selected">All Projects</a></li>
                         <li><a href="#filter" data-option-value=".web">Web</a></li>
                         <li><a href="#filter" data-option-value=".design">Design</a></li>
@@ -164,35 +172,24 @@
             </div>
             
             <div class="span9">
-                <div class="row">
-                    <section id="projects">
-                        <ul id="thumbs">
+            	<div class="row">
+                	<section id="projects">
+                    	<ul id="thumbs">
                         
-                            <!-- Item Project and Filter Name -->
-                            <li class="item-thumbs span3 web">
+							<!-- Item Project and Filter Name -->
+                        	<li class="item-thumbs span3 web">
                                 <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The City" href="_include/img/work/full/image-01-full.png">
+                                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Puerto Plata Vacation Club" href="_include/img/work/full/image-02-full.jpg">
                                     <span class="overlay-img"></span>
                                     <span class="overlay-img-thumb font-icon-plus"></span>
                                 </a>
                                 <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/image-01.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+                                <img src="_include/img/work/thumbs/image-02.jpg" alt="http://lifestyleresortpuertoplata.com/">
                             </li>
-                            <!-- End Item Project -->
+                        	<!-- End Item Project -->
                             
-                            <!-- Item Project and Filter Name -->
-                            <li class="item-thumbs span3 web">
-                                <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Office" href="_include/img/work/full/image-02-full.png">
-                                    <span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-plus"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/image-02.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
-                            </li>
-                            <!-- End Item Project -->
-                            
-                            <!-- Item Project and Filter Name -->
+							<!-- Item Project and Filter Name -->
+                        
                             <li class="item-thumbs span3 design">
                                 <!-- Fancybox - Gallery Enabled - Title - Full Image -->
                                 <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Mountains" href="_include/img/work/full/image-03-full.jpg">
@@ -202,84 +199,96 @@
                                 <!-- Thumb Image and Description -->
                                 <img src="_include/img/work/thumbs/image-03.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
                             </li>
-                            <!-- End Item Project -->
+                        	<!-- End Item Project -->
                             
-                            <!-- Item Project and Filter Name -->
-                            <li class="item-thumbs span3 design">
+							<!-- Item Project and Filter Name -->
+                            <li class="item-thumbs span3 web">
                                 <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Sea" href="_include/img/work/full/image-04-full.jpg">
+                                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Sky-Port Corporation" href="_include/img/work/full/image-01-full.jpg">
                                     <span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img src="_include/img/work/thumbs/image-01.jpg" alt="http://sky-port.co.uk/">
+                            </li>
+                        	<!-- End Item Project -->
+                            
+							<!-- Item Project and Filter Name -->
+                        	<li class="item-thumbs span3 design">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Sea" href="_include/img/work/full/image-04-full.jpg">
+                                	<span class="overlay-img"></span>
                                     <span class="overlay-img-thumb font-icon-plus"></span>
                                 </a>
                                 <!-- Thumb Image and Description -->
                                 <img src="_include/img/work/thumbs/image-04.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
                             </li>
-                            <!-- End Item Project -->
+                        	<!-- End Item Project -->
                             
-                            <!-- Item Project and Filter Name -->
-                            <li class="item-thumbs span3 apps">
-                                <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Clouds" href="_include/img/work/full/image-05-full.png">
-                                    <span class="overlay-img"></span>
+							<!-- Item Project and Filter Name -->
+                        	<li class="item-thumbs span3 apps">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Clouds" href="_include/img/work/full/image-05-full.jpg">
+                                	<span class="overlay-img"></span>
                                     <span class="overlay-img-thumb font-icon-plus"></span>
                                 </a>
                                 <!-- Thumb Image and Description -->
                                 <img src="_include/img/work/thumbs/image-05.png" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
                             </li>
-                            <!-- End Item Project -->
+                        	<!-- End Item Project -->
                             
                             
-                            <!-- Item Project and Filter Name -->
-                            <li class="item-thumbs span3 design">
-                                <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Dark" href="_include/img/work/full/image-06-full.jpg">
-                                    <span class="overlay-img"></span>
+							<!-- Item Project and Filter Name -->
+                        	<li class="item-thumbs span3 design">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Dark" href="_include/img/work/full/image-06-full.jpg">
+                                	<span class="overlay-img"></span>
                                     <span class="overlay-img-thumb font-icon-plus"></span>
                                 </a>
                                 <!-- Thumb Image and Description -->
                                 <img src="_include/img/work/thumbs/image-06.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
                             </li>
-                            <!-- End Item Project -->
+                        	<!-- End Item Project -->
                             
-                            <!-- Item Project and Filter Name -->
-                            <li class="item-thumbs span3 web">
-                                <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Beach" href="_include/img/work/full/image-03-full.png">
-                                    <span class="overlay-img"></span>
+							<!-- Item Project and Filter Name -->
+                        	<li class="item-thumbs span3 web">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Standard Getaway" href="_include/img/work/full/image-07-full.jpg">
+                                	<span class="overlay-img"></span>
                                     <span class="overlay-img-thumb font-icon-plus"></span>
                                 </a>
                                 <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/image-07.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+                                <img src="_include/img/work/thumbs/image-07.jpg" alt="http://www.standardgetaway.com/">
                             </li>
-                            <!-- End Item Project -->
+                        	<!-- End Item Project -->
 
-                            <!-- Item Project and Filter Name -->
-                            <li class="item-thumbs span3 design">
-                                <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Beach" href="_include/img/work/full/image-08-full.jpg">
-                                    <span class="overlay-img"></span>
+                        	<!-- Item Project and Filter Name -->
+                        	<li class="item-thumbs span3 design">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Beach" href="_include/img/work/full/image-08-full.jpg">
+                                	<span class="overlay-img"></span>
                                     <span class="overlay-img-thumb font-icon-plus"></span>
                                 </a>
                                 <!-- Thumb Image and Description -->
                                 <img src="_include/img/work/thumbs/image-08.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
                             </li>
-                            <!-- End Item Project -->
+                        	<!-- End Item Project -->
 
-                            <!-- Item Project and Filter Name -->
-                            <li class="item-thumbs span3 web">
-                                <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Beach" href="_include/img/work/full/image-05-full.png">
-                                    <span class="overlay-img"></span>
+                        	<!-- Item Project and Filter Name -->
+                        	<li class="item-thumbs span3 web">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Agro Viner Import" href="_include/img/work/full/image-09-full.jpg">
+                                	<span class="overlay-img"></span>
                                     <span class="overlay-img-thumb font-icon-plus"></span>
                                 </a>
                                 <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/image-09.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+                                <img src="_include/img/work/thumbs/image-09.jpg" alt="http://aimport.com.ua/">
                             </li>
-                            <!-- End Item Project -->
+                        	<!-- End Item Project -->
                         </ul>
                     </section>
                     
-                </div>
+            	</div>
             </div>
         </div>
         <!-- End Portfolio Projects -->
@@ -294,8 +303,8 @@
     <div class="row">
         <div class="span12">
             <div class="title-page">
-                <h2 class="title">About Us</h2>
-                <h3 class="title-description">Learn About our Team &amp; Culture.</h3>
+                <h2 class="title">Executive Team</h2>
+                <h3 class="title-description">We are the younger generation of professionals and strive to keep all our work within all the current trends.</h3>
             </div>
         </div>
     </div>
@@ -303,72 +312,65 @@
     
     <!-- People -->
     <div class="row">
-        
+    	
         <!-- Start Profile -->
-        <div class="span4 profile">
-            <div class="image-wrap">
+    	<div class="span4 profile">
+        	<div class="image-wrap">
                 <div class="hover-wrap">
                     <span class="overlay-img"></span>
-                    <span class="overlay-text-thumb">Lead web-developer</span>
+                    <span class="overlay-text-thumb">Sr. Web Developer</span>
                 </div>
-                <img src="_include/img/profile/profile-01.jpg" alt="John Doe">
+                <img src="_include/img/profile/profile-01.jpg" alt="Denis P.">
             </div>
-            <h3 class="profile-name">Denis Petrenko</h3>
-            <p class="profile-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat <a href="#">hendrerit dictum</a>. 
-            Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-                
+            <h3 class="profile-name">Denis P.</h3>
+            <p class="profile-description">Graduated with honors from Kiev University of Technology.  Has been professionally developing websites since 2010. His work projects include basic websites for the small businesses as well as global corporate projects, involving E-Commerce  web-portals and iphone apps . He leads our team of professional programmers, and makes sure that everything will meet and exceed our clients' expectations.</p>
+            	
             <div class="social">
-                <ul class="social-icons">
-                    <li><a href="#"><i class="font-icon-social-email"></i></a></li>
+            	<ul class="social-icons">
+            		<li><a href="#"><i class="font-icon-social-email"></i></a></li>
                     <li><a href="#"><i class="font-icon-social-skype"></i></a></li>
-                    <li><a href="#"><i class="font-icon-social-facebook"></i></a></li>
-                    <li><a href="#"><i class="font-icon-social-linkedin"></i></a></li>
                 </ul>
             </div>
         </div>
         <!-- End Profile -->
         
         <!-- Start Profile -->
-        <div class="span4 profile">
-            <div class="image-wrap">
+    	<div class="span4 profile">
+        	<div class="image-wrap">
                 <div class="hover-wrap">
                     <span class="overlay-img"></span>
-                    <span class="overlay-text-thumb">Lead Designer</span>
+                    <span class="overlay-text-thumb">Creative Director</span>
                 </div>
-                <img src="_include/img/profile/profile-02.jpg" alt="Jane Helf">
+                <img src="_include/img/profile/profile-02.jpg" alt="Julia V.">
             </div>
-            <h3 class="profile-name">Julia Varisova</h3>
-            <p class="profile-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat <a href="#">hendrerit dictum</a>. 
-            Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-                
+            <h3 class="profile-name">Julia V.</h3>
+            <p class="profile-description">Graduated from Kiev University of Design. She has been creating logo and marketing material designs for major brands of Ukraine and Poland since 2008.  Her passion is making sure that every project will be a one-of-a-kind unique design.  She lives by the rule "All My Designs are a Form of Art -  From Mind they travel through the Heart".</p>
+            	
             <div class="social">
-                <ul class="social-icons">
-                    <li><a href="#"><i class="font-icon-social-email"></i></a></li>
+            	<ul class="social-icons">
+                	<li><a href="#"><i class="font-icon-social-email"></i></a></li>
                     <li><a href="#"><i class="font-icon-social-skype"></i></a></li>
-                    <li><a href="#"><i class="font-icon-social-facebook"></i></a></li>
                 </ul>
             </div>
         </div>
         <!-- End Profile -->
         
         <!-- Start Profile -->
-        <div class="span4 profile">
-            <div class="image-wrap">
+    	<div class="span4 profile">
+        	<div class="image-wrap">
                 <div class="hover-wrap">
                     <span class="overlay-img"></span>
-                    <span class="overlay-text-thumb">Lead App-developer</span>
+                    <span class="overlay-text-thumb">Director of Public Relations</span>
                 </div>
-                <img src="_include/img/profile/profile-03.jpg" alt="Joshua Insanus">
+                <img src="_include/img/profile/profile-03.jpg" alt="Alexandr G.">
             </div>
-            <h3 class="profile-name">Alexandr Gukalov</h3>
-            <p class="profile-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat <a href="#">hendrerit dictum</a>. 
-            Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-                
+            <h3 class="profile-name">Alexandr G.</h3>
+            <p class="profile-description">Graduated with honors from both Kiev University of Management in 2007 and Kiev University of Technology in 2010. He specialized in consulting start-up businesses in Kiev, Ukraine. His devotion and management skills allow us to make sure that all the projects are done in a timely manner and with the best possible effort. </p>
+            	
             <div class="social">
-                <ul class="social-icons">
-                    <li><a href="#"><i class="font-icon-social-email"></i></a></li>
+            	<ul class="social-icons">
+                	<li><a href="#"><i class="font-icon-social-email"></i></a></li>
                     <li><a href="#"><i class="font-icon-social-skype"></i></a></li>
-                    <li><a href="#"><i class="font-icon-social-facebook"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -378,20 +380,20 @@
 
 </div>
 <div class="skill-logos">
-        <img src="_include/img/skill-logos/html5.png" alt="HTML5"  width="80">
-        <img src="_include/img/skill-logos/css3.png"  alt="CSS3"  width="80">
-        <img src="_include/img/skill-logos/js.png"  alt="JavaScript"  width="80">
+		<img src="_include/img/skill-logos/html5.png" alt="HTML5"  width="80">
+		<img src="_include/img/skill-logos/css3.png"  alt="CSS3"  width="80">
+		<img src="_include/img/skill-logos/js.png"  alt="JavaScript"  width="80">
         <img src="_include/img/skill-logos/jquery.png" alt="jQuery" width="80">
-        <img src="_include/img/skill-logos/php.png"  alt="PHP"  width="80">
-        <img id="git" src="_include/img/skill-logos/less.png" alt="LESS" width="80">
-        <img src="_include/img/skill-logos/mysql.png" alt="MySQL"width="80">
-        <img id="adobe" src="_include/img/skill-logos/grunt.png"  alt="Grunt"  width="80">
-        <img id="adobe" src="_include/img/skill-logos/AI.png"  alt="Adobe Illustrator" width="80">
-        <img id="adobe" src="_include/img/skill-logos/PS.png"alt="Adobe Photoshop" width="80">
-        <img src="_include/img/skill-logos/wordpress.png" alt="Wordpress" width="80">
-        <img id="git" src="_include/img/skill-logos/github.png"  alt="GitHub"  width="80">
-        <img src="_include/img/skill-logos/apple.png" alt="Apple" width="80">
-    </div>
+		<img src="_include/img/skill-logos/php.png"  alt="PHP"  width="80">
+		<img id="git" src="_include/img/skill-logos/less.png" alt="LESS" width="80">
+		<img src="_include/img/skill-logos/mysql.png" alt="MySQL"width="80">
+		<img id="adobe" src="_include/img/skill-logos/grunt.png"  alt="Grunt"  width="80">
+		<img id="adobe" src="_include/img/skill-logos/AI.png"  alt="Adobe Illustrator" width="80">
+		<img id="adobe" src="_include/img/skill-logos/PS.png"alt="Adobe Photoshop" width="80">
+		<img src="_include/img/skill-logos/wordpress.png" alt="Wordpress" width="80">
+		<img id="git" src="_include/img/skill-logos/github.png"  alt="GitHub"  width="80">
+		<img src="_include/img/skill-logos/apple.png" alt="Apple" width="80">
+	</div>
 </div>
 <!-- End About Section -->
 
@@ -402,8 +404,8 @@
     <div class="row">
         <div class="span12">
             <div class="title-page">
-                <h2 class="title">Get in Touch</h2>
-                <h3 class="title-description">We’re currently accepting new client projects. We look forward to serving you.</h3>
+                <h2 class="title">Contact Us</h2>
+                <h3 class="title-description">To contact us for detailed quotes and packaging, please fill out the request form <br> and we will get back to you within 24 hours.</h3>
             </div>
         </div>
     </div>
@@ -411,20 +413,20 @@
     
     <!-- Contact Form -->
     <div class="row">
-        <div class="span9">
+    	<div class="span9">
         
-            <form id="contact-form" class="contact-form" action="#">
-                <p class="contact-name">
-                    <input id="contact_name" type="text" placeholder="Full Name" value="" name="name" />
+        	<form id="contact-form" class="contact-form" action="#">
+            	<p class="contact-name">
+            		<input id="contact_name" type="text" placeholder="Full Name" value="" name="name" />
                 </p>
                 <p class="contact-email">
-                    <input id="contact_email" type="text" placeholder="Email Address" value="" name="email" />
+                	<input id="contact_email" type="text" placeholder="Email Address" value="" name="email" />
                 </p>
                 <p class="contact-message">
-                    <textarea id="contact_message" placeholder="Your Message" name="message" rows="15" cols="40"></textarea>
+                	<textarea id="contact_message" placeholder="Your Message" name="message" rows="15" cols="40"></textarea>
                 </p>
                 <p class="contact-submit">
-                    <a id="contact-submit" class="submit" href="#">Send Your Email</a>
+                	<a id="contact-submit" class="submit" href="#">SEND</a>
                 </p>
                 
                 <div id="response">
@@ -435,11 +437,12 @@
         </div>
         
         <div class="span3">
-            <div class="contact-details">
-                <h3>Contact Details</h3>
+        	<div class="contact-details">
+        		<h3>Contact Details</h3>
                 <ul>
                     <li><a href="#">adk.webstudio@gmail.com</a></li>
-                    <li>+1(917)803 6547</li>
+                    <li>phone: +1(917)803 6547</li>
+                    <li>fax: +1(201)795 4858</li>
                     <li>
                         ADK Web-Studio
                         <br>
@@ -458,15 +461,14 @@
 
 <!-- Socialize -->
 <div id="social-area" class="page">
-    <div class="container">
-        <div class="row">
+	<div class="container">
+    	<div class="row">
             <div class="span12">
                     <nav class="icons-example">
                     <ul> 
                         <li><a href="#" title="Follow Us on Facebook" target="_blank"><span class="font-icon-social-facebook"></span></a></li>
                         <li><a href="#" title="Follow Us on Google Plus" target="_blank"><span class="font-icon-social-google-plus"></span></a></li>
                         <li><a href="#" title="Follow Me on LinkedIn" target="_blank"><span class="font-icon-social-linkedin"></span></a></li>
-                        <li><a href="#" title="Follow Us on Behance" target="_blank"><span class="font-icon-social-behance"></span></a></li>
                         <li><a href="#" title="Add Us on Skype" target="_blank"><span class="font-icon-social-skype"></span></a></li>
                     </ul>
                     </nav>
@@ -478,13 +480,13 @@
 
 <!-- Footer -->
 <footer>
-    <p class="credits">&copy;2015 ADK. <a href="#" title="ADK | Web-Studio">ADK Web-Studio</a></p>
+	<p class="credits">&copy;2015 ADK. <a href="#" title="ADK | Web-Studio">ADK Web-Studio</a></p>
 </footer>
 <!-- End Footer -->
 
 <!-- Back To Top -->
 <a id="back-to-top" href="#home-slider">
-    <i class="font-icon-arrow-simple-up"></i>
+	<i class="font-icon-arrow-simple-up"></i>
 </a>
 <!-- End Back to Top -->
 

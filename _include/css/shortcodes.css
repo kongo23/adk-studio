@@ -9,7 +9,7 @@
   	-webkit-border-radius: 0;
        -moz-border-radius: 0;
             border-radius: 0;
-  	background-color: #3C3F45;
+  	background-color: #4A4A4A;
   	color: #23262C;
   	vertical-align: middle;
   	text-align: center;
@@ -32,7 +32,7 @@
 .button:hover,
 .button:active,
 .button:focus {
-	background-color: #DE5E60;
+	background-color: #D24242;
 	color:#FFFFFF;
 }
 
@@ -87,7 +87,7 @@
 	position: relative;
   	display: block;
   	padding: 15px;
-	background:#3C3F45;
+	background:#4A4A4A;
 	color: #23262C;
 	font-size: 18px;
 	font-weight: 600;
@@ -106,17 +106,17 @@
 
 .accordion-heading:hover .accordion-toggle,
 .accordion-heading:hover .accordion-toggle.inactive {
-	background:#DE5E60;
+	background:#D24242;
 	color:#FFFFFF;
 }
 
 .accordion-heading .accordion-toggle.active {
-	background:#DE5E60;
+	background:#D24242;
 	color:#FFFFFF;
 }
 
 .accordion-heading .accordion-toggle.inactive {
-	background:#3C3F45;
+	background:#4A4A4A;
 }
 
 .accordion-heading.accordionize .accordion-toggle span,
@@ -169,7 +169,7 @@
 }
 
 .accordion-inner {
-	background: #26292E;
+	background: #262626;
   	padding: 16px 20px;
 	border: none;
 }
@@ -273,7 +273,7 @@
 
 .nav > li > a:hover,
 .nav > li > a:focus {
-  	background-color: #DE5E60;
+  	background-color: #D24242;
 	color: #FFFFFF;
   	text-decoration: none;
   	display: block;
@@ -321,7 +321,7 @@
 .nav-tabs > .active > a:hover,
 .nav-tabs > .active > a:focus {
 	border: none;
-  	background-color: #DE5E60;
+  	background-color: #D24242;
 	color: #FFFFFF;
   	cursor: default;
 }
@@ -362,7 +362,7 @@
 
 blockquote {
   	padding: 15px 20px;
-  	border-left: 2px solid #DE5E60;
+  	border-left: 2px solid #D24242;
 }
 
 blockquote p {
@@ -478,7 +478,7 @@ blockquote small:before {
 ================================================== */
 
 .info-block {
-    border-left: 2px solid #DE5E60;
+    border-left: 2px solid #D24242;
     overflow: hidden;
     padding: 20px;
     position: relative;
@@ -552,7 +552,7 @@ blockquote small:before {
 	width: 70px;
 	height: 70px;
 
-	background: #26292E;
+	background: #262626;
 	
 	-webkit-transition: all 400ms ease-out 0s;	
 	   -moz-transition: all 400ms ease-out 0s;
@@ -590,7 +590,7 @@ blockquote small:before {
 
 .icons-example ul li:hover a,
 .icons-example ul li.active a {
-	background-color: #DE5E60;	
+	background-color: #DE4337;	
 	
 	-webkit-transform: rotateY(180deg);
 	   -moz-transform: rotateY(180deg);

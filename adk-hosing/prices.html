@@ -12,7 +12,7 @@
 <title>Prices | ADK | Web-Studio</title>   
 
 <meta name="description" content="Creative Outsourcing Web-Studio. Best Quality for Best Price " /> 
-
+<meta property="og:image" content="_include/img/slider-images/image01.jpg" />
 <!-- Mobile Specifics -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="HandheldFriendly" content="true"/>
@@ -60,16 +60,14 @@
 <script src="_include/js/modernizr.min.js"></script>
 
 <!-- Analytics -->
-<script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'Insert Your Code']);
-  _gaq.push(['_trackPageview']);
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+  ga('create', 'UA-65594110-1', 'auto');
+  ga('send', 'pageview');
 
 </script>
 <!-- End Analytics -->
@@ -80,8 +78,14 @@
 <body>
 
 <!-- This section is for Splash Screen -->
+<div class="ole">
 <section id="jSplash">
-    <div id="circle"></div>
+    <div class="loader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+</div>
 </section>
 <!-- End of Splash Screen -->
 
@@ -115,9 +119,10 @@
         <nav id="menu">
             <ul id="menu-nav">
                 <li><a href="http://adkwebstudio.com/" class="external">Home</a></li>
+                <li><a href="http://adkwebstudio.com/#introduction" class="external">Introduction</a></li>
                 <li><a href="http://adkwebstudio.com/#work" class="external">Portfolio</a></li>
-                <li><a href="http://adkwebstudio.com/#about" class="external">Our Team</a></li>
-                <li><a href="http://adkwebstudio.com/#contact" class="external">Contact</a></li>
+                <li><a href="http://adkwebstudio.com/#about" class="external">Executive Team</a></li>
+                <li><a href="http://adkwebstudio.com/#contact" class="external">Contact Us</a></li>
                 <li class="current"><a href="prices.html">Prices</a></li>
             </ul>
         </nav>
@@ -143,70 +148,78 @@
         <!-- Start Package Section -->
         <div class="row package">
                 <div class="span3 light">
-                    <h3 class="title-description">Silver Package</h3>
+                    <h3 class="title-animation light-animation">Silver Package</h3>
                     <ul>
                         <li><i class="icon"></i>Up to 5 pages</li>
                         <li><i class="icon"></i>Homepage slider</li>
                         <li><i class="icon"></i>2 Photo Gallery Pages</li>
                         <li><i class="icon"></i>Social Media Icon Links</li>
                         <li><i class="icon"></i>Contact Form</li>
-                        <li><i class="icon"></i>Anti-Spam & Virus</li>
-                        <li><i class="icon"></i>15 days of Free Support</li>
+                        <li><i class="icon"></i>15 days of Tech Support</li>
                         <li><i class="icon"></i>Quote for other features</li>
                     </ul>
                         <hr>
-                        <p class="price">$299</p>
+                        <p class="price-animation">$299</p>
                 </div>
                 <div class="span3 standard">
-                    <h3 class="title-description">Gold Package</h3>
+                    <h3 class="title-animation standard-animation">Gold Package</h3>
                     <ul>
-                    	<li><i class="icon"></i>Silver Package</li>
-                    	<li><i class="icon"></i>Up to 15 pages</li>
-                    	<li><i class="icon"></i>7 Photo Gallery Pages</li>
+                        <li><i class="icon"></i>Up to 15 pages</li>
+                    	<li><i class="icon"></i>Homepage slider</li>
+                        <li><i class="icon"></i>7 Photo Gallery Pages</li>
+                        <li><i class="icon"></i>Social Media Icon Links</li>
+                        <li><i class="icon"></i>Contact Form</li>
                     	<li><i class="icon"></i>Basic Logo Design</li>
-                        <li><i class="icon"></i>Blog Included</li>
                         <li><i class="icon"></i>Mobile Responsive Design</li>
+                        <li><i class="icon"></i>1 Full Design Revision</li>
                         <li><i class="icon"></i>Basic SEO Setup</li>
-                        <li><i class="icon"></i>30 days of Free Support</li>
+                        <li><i class="icon"></i>30 days of Tech Support</li>
                       	<li><i class="icon"></i>Quote for other features</li>
                     </ul>
                         <hr>
-                        <p class="price">$599</p>
+                        <p class="price-animation">$599</p>
                 </div>
                 <div class="span3 premium">
-                    <h3 class="title-description-animation price-animation">Platinum Package</h3>
+                    <h3 class="title-animation premium-animation">Platinum Package</h3>
                     <ul>
-                        <li><i class="icon"></i>Gold Package</li>
                         <li><i class="icon"></i>Up to 25 Pages</li>
-                        <li><i class="icon"></i>13 Photo Gallery Pages</li>
+                        <li><i class="icon"></i>Homepage slider</li>
+                        <li><i class="icon"></i>13 Photo Gallery Pages</li> 
+                        <li><i class="icon"></i>Social Media Icon Links</li>
+                        <li><i class="icon"></i>Contact Form</li>
                         <li><i class="icon"></i>Advanced Logo Design</li>
+                        <li><i class="icon"></i>Mobile Responsive Design</li>
                         <li><i class="icon"></i>3 Full Design Revision</li>
-                        <li><i class="icon"></i>Advanced SEO Setup</li>
-                        <li><i class="icon"></i>Google Adwords Setup</li>
                         <li><i class="icon"></i>E-commerce Included</li>
-                        <li><i class="icon"></i>45 days of Free Support</li>
+                        <li><i class="icon"></i>Advanced SEO Setup</li>
+                        <li><i class="icon"></i>Google Ads Setup & Support</li>
+                        <li><i class="icon"></i>45 days of Tech Support</li>
                         <li><i class="icon"></i>Quote for other features</li>
                     </ul>
                         <hr>
-                        <p class="price price-animation">$1099</p>
+                        <p class="price-animation">$1099</p>
                 </div>
                 <div class="span3 extra">
-                    <h3 class="title-description">Custom Package</h3>
+                    <h3 class="title-animation extra-animation">Custom Package</h3>
                     <ul>
-                        <li><i class="icon"></i>Platinum Package</li>
-                        <li><i class="icon"></i>Unique Design</li>
-                        <li><i class="icon"></i>Unique Logo Development</li>
-                        <li><i class="icon"></i>Unique Email Design</li>
-                        <li><i class="icon"></i>Unlimited Pages</li>
-                        <li><i class="icon"></i>Unlimited Products</li>
+                        <li><i class="icon"></i>Unlimited Pages & Products</li>
+                        <li><i class="icon"></i>Homepage slider</li>
                         <li><i class="icon"></i>Unlimited Galleries</li>
+                        <li><i class="icon"></i>Social Media Icon Links</li>
+                        <li><i class="icon"></i>Contact Form</li>
+                        <li><i class="icon"></i>Unique Template Design</li>
+                        <li><i class="icon"></i>Unique Logo Development</li>
+                        <li><i class="icon"></i>Mobile Responsive Design</li>
                         <li><i class="icon"></i>Unlimited Revisions</li>
+                        <li><i class="icon"></i>E-commerce Included</li>
                         <li><i class="icon"></i>Custom API setup</li>
+                        <li><i class="icon"></i>Advanced SEO Setup</li>
+                        <li><i class="icon"></i>Google Ads Setup & Support</li>
   						<li><i class="icon"></i>Unlimited Support 24/7 </li>
                         <li><i class="icon"></i>Quote for other features</li>
                     </ul>
                         <hr>
-                        <p class="price">Call for quote</p>
+                        <p class="price-animation">Call for quote</p>
                 </div>
         </div>
         <br>
@@ -221,7 +234,7 @@
             <div class="span12">
             <div class="info-block">
                     <div class="info-text">
-                        <p>Any additional<span class="color-text"> features </span>may be added at extra cost</p>
+                        <p style="font-size:18px;">Any additional features may be added at extra cost</p> 
                     </div>
                 </div>
             </div>
@@ -253,7 +266,7 @@
                         </div>
                         <div id="oneArea" class="accordion-body collapse">
                             <div class="accordion-inner">
-                                We offer a wide variety of professional design services. Our creative team will individually work with every customer to ensure the 100% satisfaction. We make Web - Templates, Business Cards, Banners, Brochures, Logo Designs and many other marketing materials.
+                                We offer a wide variety of professional design services. Our creative team will individually work with each customer to ensure 100% satisfaction. We make Web - Templates, Business Cards, Banners, Brochures, Logo Designs and many other marketing materials. 
                             </div>
                         </div>
                     </div>
@@ -267,7 +280,7 @@
                         </div>
                         <div id="twoArea" class="accordion-body collapse">
                             <div class="accordion-inner">
-                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat minima consequuntur sed maxime laborum obcaecati molestias est facilis non saepe, magni eum aliquid iure voluptatibus amet quaerat. Enim, facilis, repellat.
+                                 Our development team can build you a website of any complexity from Basic Website to the powerful  Web - Portal.
                             </div>
                         </div>
                     </div>
@@ -281,7 +294,7 @@
                         </div>
                         <div id="threeArea" class="accordion-body collapse">
                             <div class="accordion-inner">
-                                Our specialists will analyze your website's code and structure of all pages and optimize it to your individual needs. This way your website will improve its position in all the search engines therefore attract more visitors. We will also make sure your website's look is up to date.
+                                Our specialists will analyze your website's code and structure of all pages and optimize it to your individual needs. This way your website will improve its position in all the search engines, therefore attracting more visitors. We will also make sure your website's look is up to date.
                             </div>
                         </div>
                     </div>
@@ -303,7 +316,7 @@
                         </div>
                         <div id="fourArea" class="accordion-body collapse">
                             <div class="accordion-inner">
-                                Our professionals will transform your existing website to Mobile - Friendly or build you a Mobile - Friendly version of your website separately. This will bring significantly more traffic to your business and improve mobile search engine ranking.
+                                Our professionals will transform your existing website to Mobile - Friendly or build you a Mobile - Friendly version of your website separately. This will bring significantly more traffic to your business and improve search engine ranking.
                             </div>
                         </div>
                     </div>
@@ -311,13 +324,13 @@
                     <div class="accordion-group">
                         <div class="accordion-heading accordionize">
                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionArea" href="#fiveArea">
-                            Application Programming Interface (API) services
+                            API services
                             <span class="font-icon-arrow-simple-down"></span>
                         </a>
                         </div>
                         <div id="fiveArea" class="accordion-body collapse">
                             <div class="accordion-inner">
-                                Our development team will integrate any additional plugins like E-Commerce, Live Chat, Countdown plugins, Custom Sidebars, Google Maps...etc  to your existing website.
+                                Our development team will integrate any additional plug-ins like E-Commerce, Live Chat, Countdown plug-ins, Custom Sidebars, Google Maps, etc.  to your existing website. 
                             </div>
                         </div>
                     </div>
@@ -331,7 +344,7 @@
                         </div>
                         <div id="sixArea" class="accordion-body collapse">
                             <div class="accordion-inner">
-                                 Our specialists will enhance your website's position in all the search engines, set up and optimize your Google Ads account. We will also monitor your daily traffic narrow down your most successful keywords, so you will save a lot of money on advertising.
+                                 Our specialists will enhance your website's position in all the search engines, set up and optimize your Google Ads account. We will also monitor your daily traffic in order to narrow down your most successful keywords, so you will save a lot of money on advertising. 
                             </div>
                         </div>
                     </div>
@@ -354,8 +367,7 @@
                 
                 <div class="info-block">
                     <div class="info-text">
-                        <h3><span class="color-text">ADK</span> We are waiting to work with You.</h3>
-                        <p>Working with us is easy. We offer best prices for better product. You are in charge - we are here to assist you.</p>
+                        <p style="font-size:18px;">Working with us is easy. We offer <span class="color-text">best prices</span> for better product. You are in charge - we are here to assist you.</p>
                         <a class="button" target="_blank" href="index.html#contact">Contact Us</a> 
                     </div>
                 </div>
