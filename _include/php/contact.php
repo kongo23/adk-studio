@@ -8,7 +8,7 @@ header('Cache-Control: no-cache, must-revalidate');
 header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');
 header('Content-type: application/json');
 
-$admin_email = 'kongo23@i.ua'; // Your Email
+$admin_email = 'adk.webstudio@gmail.com'; // Your Email
 $message_min_length = 5; // Min Message Length
 
 
@@ -17,8 +17,9 @@ class Contact_Form{
 		
 		$this->name = stripslashes($details['name']);
 		$this->email = trim($details['email']);
+		$this->phone = trim($details['phone']);
 		$this->subject = 'Contact from Your Website'; // Subject 
-		$this->message = stripslashes($details['message']);
+		$this->message = $this->name . " " . $this->email . " " . $this->phone;
 	
 		$this->email_admin = $email_admin;
 		$this->message_min_length = $message_min_length;
